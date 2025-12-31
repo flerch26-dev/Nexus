@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efacfc1fc97764ff7b2fcc73a9245c5b, type: 3}
+  m_Name: Dialogue Graph
+  m_EditorClassIdentifier: 
+  nodeLinks:
+  - baseNodeGuid: 2bcc015c-a9e2-48fd-8851-687b17d7674d
+    portName: Next
+    targetNodeGuid: 6fbf310c-de34-4216-91d2-f3ea0809350c
+  - baseNodeGuid: 32a51fc0-1333-4af0-94bd-25b88d1ac641
+    portName: So, who are you anyways ?
+    targetNodeGuid: 1ee1cba7-99d1-472d-9bd3-f86083d52c6a
+  - baseNodeGuid: 4d365fc9-c9a1-4bbf-b665-fbb9abfc507e
+    portName: So, who are you anyways ?
+    targetNodeGuid: 1ee1cba7-99d1-472d-9bd3-f86083d52c6a
+  - baseNodeGuid: 6fbf310c-de34-4216-91d2-f3ea0809350c
+    portName: I'm well, thank you
+    targetNodeGuid: 4d365fc9-c9a1-4bbf-b665-fbb9abfc507e
+  - baseNodeGuid: 6fbf310c-de34-4216-91d2-f3ea0809350c
+    portName: Meh, been better
+    targetNodeGuid: 32a51fc0-1333-4af0-94bd-25b88d1ac641
+  - baseNodeGuid: 6fbf310c-de34-4216-91d2-f3ea0809350c
+    portName: 'I''m grumpy '
+    targetNodeGuid: 32a51fc0-1333-4af0-94bd-25b88d1ac641
+  - baseNodeGuid: 1ee1cba7-99d1-472d-9bd3-f86083d52c6a
+    portName: Next
+    targetNodeGuid: 4213dfbb-3d2d-4a6a-aa93-ddb7e6f5d998
+  - baseNodeGuid: 4213dfbb-3d2d-4a6a-aa93-ddb7e6f5d998
+    portName: Goodbye
+    targetNodeGuid: 2fcacc67-64f3-42c3-92e4-ed680d4e3957
+  - baseNodeGuid: 4213dfbb-3d2d-4a6a-aa93-ddb7e6f5d998
+    portName: Investigate
+    targetNodeGuid: 74880682-eb70-4cc2-8a78-1399a42d3dbf
+  - baseNodeGuid: 7e22a4a1-0229-4f7e-a05b-c454c72020c3
+    portName: Next
+    targetNodeGuid: 4213dfbb-3d2d-4a6a-aa93-ddb7e6f5d998
+  - baseNodeGuid: 0ceab819-b9b6-46e9-8437-40c52680e36f
+    portName: Next
+    targetNodeGuid: 4213dfbb-3d2d-4a6a-aa93-ddb7e6f5d998
+  - baseNodeGuid: 4c913ad8-52f9-400d-87f8-c8223ced123e
+    portName: Goodbye
+    targetNodeGuid: 2fcacc67-64f3-42c3-92e4-ed680d4e3957
+  - baseNodeGuid: 4c913ad8-52f9-400d-87f8-c8223ced123e
+    portName: Next
+    targetNodeGuid: 0ceab819-b9b6-46e9-8437-40c52680e36f
+  - baseNodeGuid: 74880682-eb70-4cc2-8a78-1399a42d3dbf
+    portName: What is your favorite color ?
+    targetNodeGuid: 7e22a4a1-0229-4f7e-a05b-c454c72020c3
+  - baseNodeGuid: 74880682-eb70-4cc2-8a78-1399a42d3dbf
+    portName: How long have you been here ?
+    targetNodeGuid: 0ceab819-b9b6-46e9-8437-40c52680e36f
+  - baseNodeGuid: 74880682-eb70-4cc2-8a78-1399a42d3dbf
+    portName: Nevermind
+    targetNodeGuid: 4c913ad8-52f9-400d-87f8-c8223ced123e
+  dialogueNodeData:
+  - Guid: 32a51fc0-1333-4af0-94bd-25b88d1ac641
+    dialogueText: I'm sorry to hear that {username}
+    position: {x: 708, y: 242.5}
+  - Guid: 4d365fc9-c9a1-4bbf-b665-fbb9abfc507e
+    dialogueText: That's great ! Glad to hear it !
+    position: {x: 708, y: 80}
+  - Guid: 1ee1cba7-99d1-472d-9bd3-f86083d52c6a
+    dialogueText: I'm the dialogue guy of course !
+    position: {x: 1127, y: 176.5}
+  - Guid: 4213dfbb-3d2d-4a6a-aa93-ddb7e6f5d998
+    dialogueText: 
+    position: {x: 1523, y: 416.5}
+  - Guid: 2fcacc67-64f3-42c3-92e4-ed680d4e3957
+    dialogueText: Goodbye
+    position: {x: 1790, y: 80}
+  - Guid: 7e22a4a1-0229-4f7e-a05b-c454c72020c3
+    dialogueText: Red
+    position: {x: 1992.5, y: 297}
+  - Guid: 0ceab819-b9b6-46e9-8437-40c52680e36f
+    dialogueText: A while
+    position: {x: 1906.5, y: 786}
+  - Guid: 4c913ad8-52f9-400d-87f8-c8223ced123e
+    dialogueText: Is there anything else I can do for you ?
+    position: {x: 2261, y: 440.5}
+  - Guid: 74880682-eb70-4cc2-8a78-1399a42d3dbf
+    dialogueText: 
+    position: {x: 1854.5, y: 505.5}
+  - Guid: 6fbf310c-de34-4216-91d2-f3ea0809350c
+    dialogueText: Hello there {username} ! How are you ? You have {coins} coins !
+    position: {x: 170, y: 132.5}
+  exposedProperties: []
